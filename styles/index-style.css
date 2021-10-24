@@ -1,0 +1,195 @@
+body {
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #FFBD73;
+}
+
+.page-header {
+    display: flex;
+    background-color: #0772A1;
+    min-height: 50px;
+}
+
+.page-header h1 {
+    margin-left: 30px;
+    color: white;
+}
+
+.page-header nav {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.page-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.page-header li {
+    padding-left: 30px;
+}
+
+.page-header li:first-child {
+    padding-left: 0px;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.page-header a:hover {
+    text-decoration: underline;
+}
+
+.landings-section {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:"header header header"
+                        "leftbtn container rightbtn";
+}
+
+.landings-section h2 {
+    text-align: center;
+    grid-area: header;
+    color: #A65800;
+}
+
+.landings-section .landing-container {
+    grid-area: container;
+}
+
+.button-left {
+    grid-area: leftbtn;
+    margin-left: 10px;
+}
+
+.button-right {
+    grid-area: rightbtn;
+    margin-right: 10px;
+}
+
+.button-left, .button-right {
+    height: 40%;
+    align-self: center;
+}
+
+.landing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.landing-container a {
+    text-decoration: none;
+}
+
+.landing-card {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #0772A1;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    background-color: #024A68;
+    color: white;
+}
+
+.landing-card:hover {
+    background-color: #63AFD0;
+    color: black;
+}
+
+.landing-card img {
+    order: 1;
+    min-height: 60px;
+    max-height: 140px;
+    width: auto;
+    border: 3px solid #0772A1;
+    border-radius: 10px;
+}
+
+.landing-card h3 {
+    order: 2;
+    text-align: center;
+    border-bottom: 3px solid #0772A1;
+    padding-bottom: 5px;
+    /* color: white; */
+}
+
+.landing-card p {
+    order: 3;
+    background-color: #0772A1;
+    padding: 5px;
+    margin: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.email-form form {
+    border: 4px solid #63AFD0;
+    border-radius: 10px;
+    background-color: #225E79;
+    color: white;
+    padding: 10px;
+}
+
+.email-form form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #0772A1;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    min-height: 50px;
+}
+
+.footer-links {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.footer-links a:first-child {
+    padding-left: 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* color scheme */
+/* https://colorscheme.ru/#3r21Tw0w0w0w0 */
